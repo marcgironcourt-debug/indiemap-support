@@ -18,6 +18,14 @@
       text-align: center;
       font-size: 1.8rem;
       font-weight: bold;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.8rem;
+    }
+    header svg {
+      width: 40px;
+      height: 40px;
     }
     .container {
       max-width: 600px;
@@ -49,7 +57,13 @@
   </style>
 </head>
 <body>
-  <header>Indie Map</header>
+  <header>
+    <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+      <circle cx="50" cy="50" r="48" stroke="white" stroke-width="4" fill="#fff3e0"/>
+      <path d="M30 70 L50 30 L70 70 Z" fill="#e07b39"/>
+    </svg>
+    Indie Map
+  </header>
   <div class="container">
     <h2>Contact</h2>
     <p>Pour toute question ou problème technique :</p>
